@@ -9,5 +9,5 @@ RUN pip install gunicorn
 ADD . /code/
 # start server
 EXPOSE 30015
-STOPSIGNAL SIGTERM
+# STOPSIGNAL SIGTERM
 CMD ["./start-server.sh"]
